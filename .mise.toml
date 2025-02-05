@@ -1,5 +1,6 @@
 [tools]
 python = "3.13.1"
+jq = "1.6"
 
 [env]
 _.python.venv = { path = ".venv", create = true }

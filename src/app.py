@@ -1,6 +1,6 @@
 import os
 import click
-from flask import Flask
+from flask import Flask, render_template
 from flask.cli import with_appcontext
 from flask_migrate import Migrate
 
@@ -14,7 +14,10 @@ migrate = Migrate(app, db)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return render_template(
+        'hello.html',
+        users=User.query.all()
+    )
 
 def init_db():
     db.drop_all()

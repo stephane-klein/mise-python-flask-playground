@@ -187,3 +187,13 @@ INFO  [alembic.runtime.migration] Will assume transactional DDL.
 ```sh
 $ docker compose down -v
 ```
+
+## Tips
+
+How to update project dependencies?
+
+Update [`pyproject.toml`](./pyproject.toml) and execute this commande to lock the requirements:
+
+```
+$ uv pip compile requirements.in -o requirements.txt
+```

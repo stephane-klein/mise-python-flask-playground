@@ -156,6 +156,8 @@ WARNING: This is a development server. Do not use it in a production deployment.
 Press CTRL+C to quit
 ```
 
+Open your browser on <http://127.0.0.1:5000>.
+
 ## Let's play with data model migrations
 
 When `migrations/versions/` is empty, first initialize with:

@@ -179,3 +179,9 @@ $ flask db upgrade
 INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
 INFO  [alembic.runtime.migration] Will assume transactional DDL.
 ```
+
+## Teardown
+
+```sh
+$ docker compose down -v
+```

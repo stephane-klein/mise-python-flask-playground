@@ -152,7 +152,7 @@ WARNING: This is a development server. Do not use it in a production deployment.
 Press CTRL+C to quit
 ```
 
-## Jouons un peu avec les migrations de modèle de données
+## Let's play with data model migrations
 
 When `migrations/versions/` is empty, first initialize with:
 

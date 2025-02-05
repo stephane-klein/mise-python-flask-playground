@@ -141,6 +141,10 @@ Starting the database initialization:
 $ flask init-db
 ```
 
+```sh
+$ ./scripts/load-sql.sh sqls/fixtures.sql
+```
+
 Starting the HTTP server in development mode with auto-reload:
 
 ```sh

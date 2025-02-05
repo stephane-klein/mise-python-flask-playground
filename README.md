@@ -86,7 +86,7 @@ Install with *dnf* ([see official Mise instructions](https://mise.jdx.dev/instal
 ```sh
 $ sudo dnf install -y dnf-plugins-core
 $ sudo dnf config-manager --add-repo https://mise.jdx.dev/rpm/mise.repo
-$ sudo dnf install -y mise
+$ sudo dnf install -y mise postgresql
 ```
 
 And follow there instruction to install Docker Engine on Fedora: https://docs.docker.com/engine/install/fedora/#install-using-the-repository

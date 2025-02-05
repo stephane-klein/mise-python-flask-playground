@@ -14,7 +14,8 @@ Brew is a popular package manager on *macOS*.
 However, it does not come pre-installed: follow the instructions from the Brew [Website](https://brew.sh/index_fr):
 
 ```sh
-$ brew install git mise colima docker docker-compose
+$ brew install git mise colima docker docker-compose libpq
+$ brew link --force libpq
 $ cat << EOF > ~/.docker/config.json
 {
     "auths": {},
@@ -68,7 +69,7 @@ Install with *dnf* ([see official Mise instructions](https://mise.jdx.dev/instal
 
 ```sh
 $ sudo apt update -y
-$ sudo apt install -y gpg sudo wget curl
+$ sudo apt install -y gpg sudo wget curl postgresql-client
 $ sudo install -dm 755 /etc/apt/keyrings
 $ wget -qO - https://mise.jdx.dev/gpg-key.pub | gpg --dearmor | sudo tee /etc/apt/keyrings/mise-archive-keyring.gpg 1> /dev/null
 $ echo "deb [signed-by=/etc/apt/keyrings/mise-archive-keyring.gpg arch=amd64] https://mise.jdx.dev/deb stable main" | sudo tee /etc/apt/sources.list.d/mise.list

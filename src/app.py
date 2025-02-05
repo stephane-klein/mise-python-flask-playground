@@ -21,6 +21,9 @@ def hello_world():
 
 def init_db():
     db.drop_all()
+    db.session.execute(db.text('CREATE EXTENSION IF NOT EXISTS "uuid-ossp"'))
+    db.session.execute(db.text('CREATE EXTENSION IF NOT EXISTS "unaccent"'))
+    db.session.commit()
     db.create_all()
 
 @click.command("init-db")

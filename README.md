@@ -116,7 +116,7 @@ $ source ~/.zsrhrc
 $ mise trust
 $ mise install
 $ docker compose up --wait
-$ pip install -r requirements.txt
+$ uv pip install -r requirements.txt
 ```
 
 If you just ran `docker compose up --wait`, you need to reload `.envrc` to update the `POSTGRES_URL` environment variable:

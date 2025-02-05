@@ -1,6 +1,10 @@
 [tools]
 python = "3.13.1"
 jq = "1.6"
+uv = "0.5.28"
 
 [env]
 _.python.venv = { path = ".venv", create = true }
+
+[settings]
+python.uv_venv_auto = true

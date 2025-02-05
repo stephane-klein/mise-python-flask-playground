@@ -1,6 +1,6 @@
 # Python, PostgreSQL, and Flask with Migrations playground
 
-Minimalist playground of a project based on Python, Flask-SQLAlchemy, Flask-Migrate and PostgreSQL launched via Docker.
+Minimalist playground of a project based on Python (installed by Mise), Flask-SQLAlchemy, Flask-Migrate and PostgreSQL launched via Docker.
 
 The environment installation method has been documented for MacOS, Linux (Ubuntu and Fedora) and Windows 10 and 11 with WSL.
 
